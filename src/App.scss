@@ -1,0 +1,182 @@
+// https://9elements.com/blog/css-border-radius/
+
+// 60% 40% 30% 70% / 60% 30% 70% 40%
+
+$green: #5e6d47;
+$blue: #4b5465;
+$yellow: #edc70b;
+$yellow-dark: #c09110;
+$yellow-light: #fae57c;
+$brown: #fae57c;
+$browm-dark: #85640a;
+$red: #da5235;
+$red-dark: #9f3029;
+$eye: #eeebc2;
+$eye-dark: #b0ac87;
+$black: #000105;
+$white: #fffffe;
+$shadow: #bbc5d5;
+
+* {
+  // border: 1px solid red;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#root {
+  flex: 1;
+  background-color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 422px;
+  height: 800px;
+  background: url('./mrbeachzombie.png') center 100% no-repeat / contain;
+  position: relative;
+}
+
+.head {
+  height: 405px;
+}
+
+.left-eye {
+  position: absolute;
+  height: 134px;
+  width: 107px;
+  top: 153px;
+  left: 78px;
+}
+
+.right-eye {
+  position: absolute;
+  height: 146px;
+  width: 124px;
+  top: 146px;
+  right: 82px;
+
+  &__green-circle {
+    background-color: $green;
+    width: 119px;
+    height: 117px;
+    border-radius: 63% 68% 48% 51% / 59% 65% 72% 81%;
+    position: absolute;
+  }
+
+  &__green-circle-detail {
+    background-color: $green;
+    position: absolute;
+    width: 38px;
+    height: 10px;
+    border-radius: 100%;
+    top: 26px;
+    left: 16px;
+    transform: rotate(-26deg);
+    box-shadow: inset 0 3px 0 $black;
+  }
+
+  &__sclera {
+    background-color: $eye;
+    width: 107px;
+    height: 95px;
+    position: absolute;
+    top: 28px;
+    left: 8px;
+    border-radius: 87% 68% 89% 82% / 87% 70% 100% 80%;
+    border: 4px solid $black;
+    box-shadow: inset 0 -3px 0 2px $eye-dark, inset -6px -6px 0 2px $eye-dark;
+  }
+
+  &__iris {
+    background-color: $red;
+    position: absolute;
+    width: 29px;
+    height: 21px;
+    top: 64px;
+    left: 54px;
+    border-radius: 82% 72% 48% 51% / 59% 83% 66% 77%;
+    transform: rotate(-23deg);
+    border: 4px solid $black;
+  }
+
+  &__pupil {
+    background-color: $black;
+    position: absolute;
+    width: 13px;
+    height: 8px;
+    top: 74px;
+    left: 65px;
+    border-radius: 200%;
+    transform: rotate(-10deg);
+  }
+
+  &__highlight {
+    background-color: $white;
+    position: absolute;
+    width: 25px;
+    height: 11px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    top: 48px;
+    left: 20px;
+    transform: rotate(-44deg);
+  }
+
+  &__highlight-2 {
+    background-color: $white;
+    position: absolute;
+    width: 14px;
+    height: 11px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    top: 42px;
+    left: 35px;
+    transform: scaleX(-1) rotate(10deg);
+  }
+
+  &__bags {
+    background-color: $blue;
+    position: absolute;
+    height: 59px;
+    width: 84px;
+    top: 80px;
+    left: 25px;
+    border-radius: 100%;
+    transform: rotate(-8deg);
+    border: 3px solid $black;
+  }
+
+  &__bags-2 {
+    background-color: $blue;
+    position: absolute;
+    height: 47px;
+    width: 86px;
+    top: 77px;
+    left: 33px;
+    border-radius: 100%;
+    transform: rotate(-7deg);
+    border: 3px solid $black;
+  }
+
+  &__bags-detail {
+    background-color: $blue;
+    position: absolute;
+    width: 55px;
+    height: 16px;
+    border-radius: 100%;
+    top: 121px;
+    left: 29px;
+    transform: scaleY(-1) rotate(-9deg);
+    box-shadow: inset 0 2px 0 $black;
+  }
+}
