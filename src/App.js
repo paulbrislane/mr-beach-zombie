@@ -76,6 +76,15 @@ function App() {
         <div className="arm-left__finger-3a"></div>
       </section>
 
+      <section className="shorts">
+        <div className="shorts__pelvis"></div>
+        <div className="shorts__pelvis-a"></div>
+        <div className="shorts__pelvis-b"></div>
+        <div className="shorts__pelvis-c"></div>
+        <div className="shorts__pelvis-d"></div>
+        {/* <div className="shorts__pelvis-c"></div> */}
+      </section>
+
       <section className="legs">
         <div className="legs__left"></div>
         <div className="legs__right"></div>

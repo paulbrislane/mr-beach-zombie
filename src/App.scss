@@ -898,6 +898,75 @@ main {
   }
 }
 
+.shorts {
+  position: absolute;
+  width: 121px;
+  height: 116px;
+  top: 583px;
+  left: 223px;
+  // opacity: 0.8;
+  z-index: 1;
+
+  &__pelvis {
+    position: absolute;
+    background-color: $brown;
+    width: 76px;
+    height: 36px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transform: scaleY(-1) rotate(-17deg);
+    left: 3px;
+    top: 7px;
+    box-shadow: -2px -2px 0px 1px $black;
+    z-index: 1;
+  }
+
+  &__pelvis-a {
+    position: absolute;
+    background-color: $brown;
+    width: 51px;
+    height: 21px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    left: 74px;
+    transform: rotate(131deg);
+    top: 13px;
+    box-shadow: -2px -2px 0px 1px $black;
+  }
+
+  &__pelvis-b {
+    position: absolute;
+    background-color: $brown;
+    width: 78px;
+    height: 40px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transform: scaleY(-1) rotate(-5deg);
+    left: 23px;
+    top: 6px;
+    box-shadow: -2px -2px 0px 1px #000105;
+  }
+
+  &__pelvis-c {
+    position: absolute;
+    background-color: $brown;
+    width: 25px;
+    height: 12px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transform: scaleY(-1) rotate(-17deg);
+    left: 3px;
+    top: 2px;
+  }
+
+  &__pelvis-d {
+    position: absolute;
+    background-color: $brown;
+    width: 36px;
+    height: 12px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transform: scaleY(-1) rotate(7deg);
+    left: 78px;
+    top: 4px;
+  }
+}
+
 .legs {
   position: absolute;
   width: 119px;
@@ -962,7 +1031,7 @@ main {
       position: absolute;
       height: 151px;
       width: 98px;
-      left: 15px;
+      left: 12px;
       border-radius: 100%;
       top: -2px;
       transform: rotate(-12deg);
