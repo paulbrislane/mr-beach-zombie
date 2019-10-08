@@ -75,6 +75,11 @@ function App() {
         <div className="arm-left__finger-3"></div>
         <div className="arm-left__finger-3a"></div>
       </section>
+
+      <section className="legs">
+        <div className="legs__left"></div>
+        <div className="legs__right"></div>
+      </section>
     </main>
   );
 }
