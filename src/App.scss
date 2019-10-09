@@ -2,6 +2,10 @@
 
 // 60% 40% 30% 70% / 60% 30% 70% 40%
 
+@mixin ibr() {
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+}
+
 $green: #5e6d47;
 $blue: #4b5465;
 $yellow: #edc70b;
@@ -1031,11 +1035,133 @@ main {
       position: absolute;
       height: 151px;
       width: 98px;
-      left: 12px;
+      left: 13px;
       border-radius: 100%;
-      top: -2px;
+      top: -9px;
       transform: rotate(-12deg);
       box-shadow: -3px 0px 0px 0px #000105;
     }
+  }
+}
+
+.feet {
+  position: absolute;
+  height: 64px;
+  width: 155px;
+  top: 730px;
+  left: 188px;
+
+  &__right {
+    @include ibr;
+    position: absolute;
+    background-color: $yellow;
+    width: 69px;
+    height: 32px;
+    left: 83px;
+    transform: rotate(-22deg) scaleY(-1);
+    top: 15px;
+  }
+
+  &__right-heel {
+    position: absolute;
+    background-color: $yellow;
+    border-radius: 50%;
+    width: 36px;
+    height: 29px;
+    left: 119px;
+    top: 10px;
+  }
+
+  &__right-toe-box {
+    position: absolute;
+    background-color: $yellow;
+    height: 19px;
+    width: 39px;
+    top: 34px;
+    left: 76px;
+    transform: rotate(3deg) skew(-58deg, 10deg);
+  }
+
+  &__right-little-toe {
+    @include ibr;
+    position: absolute;
+    background-color: $yellow;
+    height: 5px;
+    width: 5px;
+    top: 32px;
+    left: 2px;
+  }
+
+  &__right-toe-2 {
+    @include ibr;
+    position: absolute;
+    background-color: $yellow;
+    height: 9px;
+    width: 9px;
+    top: 31px;
+    left: 6px;
+  }
+
+  &__right-toe-3 {
+    @include ibr;
+    position: absolute;
+    background-color: $yellow;
+    height: 12px;
+    width: 13px;
+    top: 31px;
+    left: 14px;
+  }
+
+  &__right-big-toe {
+    @include ibr;
+    position: absolute;
+    background-color: $yellow;
+    height: 15px;
+    width: 16px;
+    top: 31px;
+    left: 25px;
+  }
+
+  &__left {
+  }
+
+  &__left-little-toe {
+    @include ibr;
+    position: absolute;
+    background-color: $yellow;
+    height: 6px;
+    width: 6px;
+    top: 46px;
+    left: 60px;
+  }
+
+  &__left-toe-2 {
+    @include ibr;
+    position: absolute;
+    background-color: $yellow;
+    height: 9px;
+    width: 9px;
+    top: 46px;
+    left: 64px;
+  }
+
+  &__left-toe-3 {
+    @include ibr;
+    position: absolute;
+    background-color: $yellow;
+    height: 13px;
+    width: 14px;
+    top: 47px;
+    left: 72px;
+  }
+
+  &__left-big-toe {
+    @include ibr;
+    position: absolute;
+    background-color: $yellow;
+    height: 15px;
+    width: 16px;
+    top: 46px;
+    left: 83px;
   }
 }

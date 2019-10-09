@@ -82,12 +82,28 @@ function App() {
         <div className="shorts__pelvis-b"></div>
         <div className="shorts__pelvis-c"></div>
         <div className="shorts__pelvis-d"></div>
-        {/* <div className="shorts__pelvis-c"></div> */}
+        <div className="shorts__pelvis-c"></div>
       </section>
 
       <section className="legs">
         <div className="legs__left"></div>
         <div className="legs__right"></div>
+      </section>
+
+      <section className="feet">
+        <div className="feet__left"></div>
+        <div className="feet__left-little-toe"></div>
+        <div className="feet__left-toe-2"></div>
+        <div className="feet__left-toe-3"></div>
+        <div className="feet__left-big-toe"></div>
+
+        <div className="feet__right"></div>
+        <div className="feet__right-heel"></div>
+        <div className="feet__right-toe-box"></div>
+        <div className="feet__right-little-toe"></div>
+        <div className="feet__right-toe-2"></div>
+        <div className="feet__right-toe-3"></div>
+        <div className="feet__right-big-toe"></div>
       </section>
     </main>
   );
