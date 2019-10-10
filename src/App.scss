@@ -901,7 +901,9 @@ main {
     box-shadow: inset -13px -4px 0 0px $yellow-dark;
   }
 }
-
+/* -------------------------------
+ SHORTS
+------------------------------- */
 .shorts {
   position: absolute;
   width: 121px;
@@ -921,19 +923,20 @@ main {
     left: 3px;
     top: 7px;
     box-shadow: -2px -2px 0px 1px $black;
-    z-index: 1;
+    z-index: 2;
   }
 
   &__pelvis-a {
     position: absolute;
     background-color: $brown;
-    width: 51px;
+    width: 56px;
     height: 21px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    left: 74px;
-    transform: rotate(131deg);
+    left: 68px;
+    transform: rotate(137deg);
     top: 13px;
     box-shadow: -2px -2px 0px 1px $black;
+    z-index: 2;
   }
 
   &__pelvis-b {
@@ -945,7 +948,8 @@ main {
     transform: scaleY(-1) rotate(-5deg);
     left: 23px;
     top: 6px;
-    box-shadow: -2px -2px 0px 1px #000105;
+    box-shadow: -2px -2px 0px 1px $black;
+    // z-index: 2;
   }
 
   &__pelvis-c {
@@ -968,6 +972,54 @@ main {
     transform: scaleY(-1) rotate(7deg);
     left: 78px;
     top: 4px;
+  }
+
+  &__left-leg {
+    position: absolute;
+    background-color: $brown;
+    height: 100px;
+    width: 43px;
+    left: 14px;
+    border-radius: 100%;
+    transform: rotate(14deg);
+    top: 10px;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $bg;
+      height: 100px;
+      width: 43px;
+      left: 21px;
+      border-radius: 100%;
+      transform: rotate(-15deg);
+      top: 10px;
+    }
+  }
+
+  &__right-leg {
+    position: absolute;
+    background-color: $brown;
+    height: 100px;
+    width: 43px;
+    left: 58px;
+    border-radius: 100%;
+    transform: rotate(5deg);
+    top: 10px;
+    z-index: 1;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $bg;
+      height: 100px;
+      width: 43px;
+      left: 21px;
+      border-radius: 100%;
+      transform: rotate(-10deg);
+      top: 10px;
+    }
   }
 }
 
@@ -1121,8 +1173,36 @@ main {
     top: 31px;
     left: 25px;
   }
-
+  ///
   &__left {
+    @include ibr;
+    position: absolute;
+    background-color: $yellow;
+    width: 73px;
+    height: 31px;
+    left: 22px;
+    transform: rotate(-22deg) scaleY(-1);
+    top: 2px;
+  }
+
+  &__left-heel {
+    position: absolute;
+    background-color: $yellow;
+    border-radius: 50%;
+    width: 34px;
+    height: 26px;
+    left: 62px;
+    top: -2px;
+  }
+
+  &__left-toe-box {
+    position: absolute;
+    background-color: $yellow;
+    height: 19px;
+    width: 38px;
+    top: 21px;
+    left: 16px;
+    transform: rotate(3deg) skew(-58deg, 10deg);
   }
 
   &__left-little-toe {

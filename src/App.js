@@ -83,6 +83,8 @@ function App() {
         <div className="shorts__pelvis-c"></div>
         <div className="shorts__pelvis-d"></div>
         <div className="shorts__pelvis-c"></div>
+        <div className="shorts__left-leg"></div>
+        <div className="shorts__right-leg"></div>
       </section>
 
       <section className="legs">
@@ -92,6 +94,8 @@ function App() {
 
       <section className="feet">
         <div className="feet__left"></div>
+        <div className="feet__left-heel"></div>
+        <div className="feet__left-toe-box"></div>
         <div className="feet__left-little-toe"></div>
         <div className="feet__left-toe-2"></div>
         <div className="feet__left-toe-3"></div>
