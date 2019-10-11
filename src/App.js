@@ -54,6 +54,7 @@ function App() {
         </div>
       </section>
       <section className="body">
+        <div className="body__trunk"></div>
         <div className="body__chest"></div>
         <div className="body__front"></div>
         <div className="body__back"></div>
@@ -98,19 +99,16 @@ function App() {
 
       <section className="feet">
         <div className="feet__left"></div>
-        <div className="feet__left-heel"></div>
-        <div className="feet__left-toe-box"></div>
-        <div className="feet__left-little-toe"></div>
-        <div className="feet__left-toe-2"></div>
-        <div className="feet__left-toe-3"></div>
-        <div className="feet__left-big-toe"></div>
-
         <div className="feet__right"></div>
+        <div className="feet__left-heel"></div>
         <div className="feet__right-heel"></div>
-        <div className="feet__right-toe-box"></div>
+        <div className="feet__left-little-toe"></div>
         <div className="feet__right-little-toe"></div>
+        <div className="feet__left-toe-2"></div>
         <div className="feet__right-toe-2"></div>
+        <div className="feet__left-toe-3"></div>
         <div className="feet__right-toe-3"></div>
+        <div className="feet__left-big-toe"></div>
         <div className="feet__right-big-toe"></div>
       </section>
     </main>
