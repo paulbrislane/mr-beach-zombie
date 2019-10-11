@@ -17,7 +17,7 @@ $red: #ff0000;
 $red-dark: #9f3029;
 $eye: #eeebc2;
 $eye-dark: #b0ac87;
-$black: #000105;
+$blk: #000105;
 $white: #fffffe;
 $shadow: #bbc5d5;
 
@@ -77,12 +77,12 @@ main {
     border-radius: 100%;
     left: 21px;
     top: 6px;
-    box-shadow: 0 -4px 0 0 $black;
+    box-shadow: 0 -4px 0 0 $blk;
   }
 
   &__peak-1-depth {
     position: absolute;
-    background-color: $black;
+    background-color: $blk;
     height: 45px;
     width: 34px;
     left: 56px;
@@ -90,7 +90,7 @@ main {
     clip-path: polygon(0% 0%, 41% 0, 101% 100%, 43% 100%);
     border-top: 3px solid #000105;
     transform: skewY(16deg);
-    border-top: 3px solid $black;
+    border-top: 3px solid $blk;
     border-top-right-radius: 31px;
 
     &::before {
@@ -105,7 +105,7 @@ main {
   }
 
   &__peak-1 {
-    background-color: $black;
+    background-color: $blk;
     position: absolute;
     width: 72px;
     height: 56px;
@@ -134,11 +134,11 @@ main {
     border-radius: 100%;
     left: 131px;
     top: 6px;
-    box-shadow: 0 -4px 0 0 $black;
+    box-shadow: 0 -4px 0 0 $blk;
   }
 
   &__peak-2 {
-    background-color: $black;
+    background-color: $blk;
     position: absolute;
     width: 81px;
     height: 56px;
@@ -166,11 +166,11 @@ main {
     border-radius: 100%;
     left: 85px;
     top: 21px;
-    box-shadow: 0 -3px 0 0 $black;
+    box-shadow: 0 -3px 0 0 $blk;
   }
 
   &__peak-rear {
-    background-color: $black;
+    background-color: $blk;
     position: absolute;
     width: 54px;
     height: 41px;
@@ -190,7 +190,7 @@ main {
   }
 
   &__peak-divider {
-    background-color: $black;
+    background-color: $blk;
     position: absolute;
     height: 5px;
     width: 42px;
@@ -208,7 +208,7 @@ main {
     right: 7px;
     top: 12px;
     transform: skew(7deg);
-    box-shadow: 4px 0 0 0 $black;
+    box-shadow: 4px 0 0 0 $blk;
   }
 
   &__peak-right-cap {
@@ -219,12 +219,12 @@ main {
     border-radius: 100%;
     left: 180px;
     top: 8px;
-    box-shadow: 4px -2px 0 0 $black;
+    box-shadow: 4px -2px 0 0 $blk;
   }
 
   &__peak-right-depth {
     position: absolute;
-    background-color: $black;
+    background-color: $blk;
     height: 54px;
     width: 34px;
     left: 164px;
@@ -282,7 +282,7 @@ main {
 }
 
 .face {
-  background-color: $black;
+  background-color: $blk;
   position: absolute;
   width: 252px;
   height: 245px;
@@ -345,7 +345,7 @@ main {
       content: '';
       width: 10px;
       height: 16px;
-      border: 2px solid $black;
+      border: 2px solid $blk;
       border-radius: 100%;
       transform: rotate(7deg);
       position: absolute;
@@ -355,7 +355,7 @@ main {
 
   &__mark {
     position: absolute;
-    background-color: $black;
+    background-color: $blk;
     height: 7px;
     width: 11px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -377,7 +377,7 @@ main {
 
   &__mark-1 {
     position: absolute;
-    background-color: $black;
+    background-color: $blk;
     height: 7px;
     width: 11px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -398,7 +398,7 @@ main {
 
   &__mark-2 {
     position: absolute;
-    background-color: $black;
+    background-color: $blk;
     width: 11px;
     height: 4px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -433,7 +433,7 @@ main {
     top: 17px;
     left: 58px;
     transform: rotate(39deg);
-    box-shadow: inset 0 3px 0 $black;
+    box-shadow: inset 0 3px 0 $blk;
   }
 
   &__sclera {
@@ -443,7 +443,7 @@ main {
     height: 88px;
     top: 25px;
     left: 2px;
-    border: 4px solid $black;
+    border: 4px solid $blk;
     border-radius: 44% 45% 54% 48% / 52% 37% 70% 40%;
     box-shadow: inset -5px -10px 0 $eye-dark;
   }
@@ -478,7 +478,7 @@ main {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     top: 43px;
     left: 25px;
-    border: 4px solid $black;
+    border: 4px solid $blk;
     transform: rotate(40deg);
     box-shadow: 0 0 14px 0 $red;
   }
@@ -492,7 +492,7 @@ main {
     top: 92px;
     left: 34px;
     transform: scale(-1) rotate(-17deg);
-    box-shadow: -2px -3px 0 1px $black;
+    box-shadow: -2px -3px 0 1px $blk;
   }
 
   &__bags-2 {
@@ -503,7 +503,7 @@ main {
     border-radius: 46%;
     top: 111px;
     left: 20px;
-    box-shadow: -4px 2px 0 0 $black;
+    box-shadow: -4px 2px 0 0 $blk;
   }
 
   &__bags-3 {
@@ -514,7 +514,7 @@ main {
     border-radius: 46%;
     top: 120px;
     left: 27px;
-    box-shadow: -1px 2px 0 1px $black;
+    box-shadow: -1px 2px 0 1px $blk;
   }
 }
 
@@ -542,7 +542,7 @@ main {
     top: 26px;
     left: 16px;
     transform: rotate(-26deg);
-    box-shadow: inset 0 3px 0 $black;
+    box-shadow: inset 0 3px 0 $blk;
   }
 
   &__sclera {
@@ -553,7 +553,7 @@ main {
     top: 28px;
     left: 8px;
     border-radius: 87% 68% 89% 82% / 87% 70% 100% 80%;
-    border: 4px solid $black;
+    border: 4px solid $blk;
     box-shadow: inset 0 -3px 0 2px $eye-dark, inset -6px -6px 0 2px $eye-dark;
   }
 
@@ -566,12 +566,12 @@ main {
     left: 54px;
     border-radius: 82% 72% 48% 51% / 59% 83% 66% 77%;
     transform: rotate(-23deg);
-    border: 4px solid $black;
+    border: 4px solid $blk;
     box-shadow: 0 0 30px -2px $red;
   }
 
   &__pupil {
-    background-color: $black;
+    background-color: $blk;
     position: absolute;
     width: 13px;
     height: 8px;
@@ -612,7 +612,7 @@ main {
     left: 25px;
     border-radius: 100%;
     transform: rotate(-8deg);
-    border: 3px solid $black;
+    border: 3px solid $blk;
   }
 
   &__bags-2 {
@@ -624,7 +624,7 @@ main {
     left: 33px;
     border-radius: 100%;
     transform: rotate(-7deg);
-    border: 3px solid $black;
+    border: 3px solid $blk;
   }
 
   &__bags-detail {
@@ -636,7 +636,7 @@ main {
     top: 121px;
     left: 29px;
     transform: scaleY(-1) rotate(-9deg);
-    box-shadow: inset 0 2px 0 $black;
+    box-shadow: inset 0 2px 0 $blk;
   }
 }
 
@@ -654,6 +654,46 @@ main {
   height: 179px;
   top: 404px;
   left: 212px;
+
+  &__front {
+    position: absolute;
+    background-color: $bg;
+    height: 154px;
+    width: 49px;
+    border-radius: 100%;
+    left: -37px;
+    top: 12px;
+    box-shadow: 4px 0px 0px 0px $blk;
+    transform: rotate(-6deg);
+  }
+
+  &__chest {
+    position: absolute;
+    background-color: $yellow;
+    height: 163px;
+    width: 100px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-color: $bg;
+      width: 49px;
+      height: 66px;
+      right: 0;
+    }
+  }
+
+  &__back {
+    position: absolute;
+    background-color: red;
+    height: 196px;
+    width: 57px;
+    border-radius: 100%;
+    right: 32px;
+    transform: rotate(-23deg);
+    top: -8px;
+    box-shadow: 3px 0px 0px 0px $blk;
+  }
 }
 
 .arm-right {
@@ -681,7 +721,7 @@ main {
     width: 82px;
     left: 67px;
     top: 13px;
-    border: 3px solid $black;
+    border: 3px solid $blk;
     transform: rotate(1deg);
     z-index: 1;
     border: {
@@ -697,7 +737,7 @@ main {
     background-color: $red-dark;
     height: 14px;
     width: 10px;
-    border: 3px solid $black;
+    border: 3px solid $blk;
     border-radius: 100%;
     top: 12px;
     left: 60px;
@@ -722,7 +762,7 @@ main {
     right: 0px;
     top: 11px;
     border-radius: 10px;
-    border: 3px solid $black;
+    border: 3px solid $blk;
     transform: rotate(-17deg);
     border-left: 0;
     border-top-left-radius: 0;
@@ -739,7 +779,7 @@ main {
     left: 67px;
     border-radius: 10px;
     top: 29px;
-    border: 3px solid $black;
+    border: 3px solid $blk;
     transform: rotate(-6deg);
     z-index: 1;
     border-left: 0;
@@ -755,7 +795,7 @@ main {
     width: 75px;
     top: 38px;
     left: 0px;
-    border: 3px solid $black;
+    border: 3px solid $blk;
     border-radius: 42% 40% 30% 70% / 60% 30% 70% 40%;
     transform: rotate(-14deg);
     box-shadow: inset 0 -7px 0 5px $yellow-dark;
@@ -779,7 +819,7 @@ main {
     top: 55px;
     left: 39px;
     border-radius: 42% 40% 30% 70% / 60% 30% 70% 40%;
-    border: 1px solid $black;
+    border: 1px solid $blk;
   }
 
   &__hand-spot-1 {
@@ -789,7 +829,7 @@ main {
     top: 43px;
     left: 46px;
     border-radius: 42% 40% 30% 70% / 60% 30% 70% 40%;
-    border: 1px solid $black;
+    border: 1px solid $blk;
 
     &::before {
       content: '';
@@ -811,7 +851,7 @@ main {
     border-radius: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    border: 2px solid $black;
+    border: 2px solid $blk;
     border-top: 0;
     transform: rotate(18deg);
   }
@@ -825,7 +865,7 @@ main {
     border-radius: 10px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0;
-    border: 2px solid $black;
+    border: 2px solid $blk;
     border-top: 0;
     transform: rotate(-6deg);
   }
@@ -840,7 +880,7 @@ main {
     border-radius: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    border: 2px solid $black;
+    border: 2px solid $blk;
     border-top: 0;
   }
 
@@ -854,7 +894,7 @@ main {
     border-radius: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    border: 2px solid $black;
+    border: 2px solid $blk;
     border-top: 0;
     transform: rotate(-11deg);
   }
@@ -869,7 +909,7 @@ main {
     border-radius: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
-    border: 2px solid $black;
+    border: 2px solid $blk;
     border-top: 0;
   }
 
@@ -883,7 +923,7 @@ main {
     border-radius: 10px;
     border-top-left-radius: 0;
     border-top-right-radius: 9px;
-    border: 2px solid $black;
+    border: 2px solid $blk;
     border-top: 0;
     transform: rotate(-31deg);
   }
@@ -895,7 +935,7 @@ main {
     width: 30px;
     top: 62px;
     left: -16px;
-    border: 3px solid $black;
+    border: 3px solid $blk;
     border-radius: 42% 40% 30% 70% / 60% 30% 70% 40%;
     transform: rotate(-46deg);
     box-shadow: inset -13px -4px 0 0px $yellow-dark;
@@ -922,7 +962,7 @@ main {
     transform: scaleY(-1) rotate(-17deg);
     left: 3px;
     top: 7px;
-    box-shadow: -2px -2px 0px 1px $black;
+    box-shadow: -2px -2px 0px 1px $blk;
     z-index: 2;
   }
 
@@ -935,7 +975,7 @@ main {
     left: 68px;
     transform: rotate(137deg);
     top: 13px;
-    box-shadow: -2px -2px 0px 1px $black;
+    box-shadow: -2px -2px 0px 1px $blk;
     z-index: 2;
   }
 
@@ -948,7 +988,7 @@ main {
     transform: scaleY(-1) rotate(-5deg);
     left: 23px;
     top: 6px;
-    box-shadow: -2px -2px 0px 1px $black;
+    box-shadow: -2px -2px 0px 1px $blk;
     // z-index: 2;
   }
 
@@ -1045,7 +1085,7 @@ main {
       height: 114px;
       width: 34px;
       border-radius: 100%;
-      box-shadow: -3px 0px 0px 0px $black;
+      box-shadow: -3px 0px 0px 0px $blk;
     }
 
     &::after {
@@ -1058,7 +1098,7 @@ main {
       border-radius: 100%;
       top: -11px;
       transform: rotate(-4deg);
-      box-shadow: -3px 2px 0px 0px $black;
+      box-shadow: -3px 2px 0px 0px $blk;
     }
   }
 

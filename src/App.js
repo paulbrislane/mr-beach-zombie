@@ -53,7 +53,11 @@ function App() {
           <div className="mouth__right"></div>
         </div>
       </section>
-      <section className="body"></section>
+      <section className="body">
+        <div className="body__chest"></div>
+        <div className="body__front"></div>
+        <div className="body__back"></div>
+      </section>
       <section className="arm-right">
         <div className="arm-right__upper"></div>
         <div className="arm-right__lower"></div>
