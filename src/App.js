@@ -1,5 +1,5 @@
-import React from "react";
-import "./App.scss";
+import React from 'react';
+import './App.scss';
 
 function App() {
   return (
@@ -18,39 +18,48 @@ function App() {
           <div className="crown__peak-2-cap"></div>
           <div className="crown__peak-divider"></div>
         </div>
-        <div className="face-patch"></div>
-        <div className="face">
-          <div className="face__splat"></div>
-          <div className="face__splat-ring"></div>
-          <div className="face__mark"></div>
-          <div className="face__mark-1"></div>
-          <div className="face__mark-2"></div>
-        </div>
-        <div className="left-eye">
-          <div className="left-eye__green-circle"></div>
-          <div className="left-eye__green-circle-detail"></div>
-          <div className="left-eye__bags"></div>
-          <div className="left-eye__bags-3"></div>
-          <div className="left-eye__bags-2"></div>
-          <div className="left-eye__sclera"></div>
-          <div className="left-eye__iris"></div>
-          <div className="left-eye__highlight"></div>
-          <div className="left-eye__highlight-2"></div>
-        </div>
-        <div className="right-eye">
-          <div className="right-eye__green-circle"></div>
-          <div className="right-eye__green-circle-detail"></div>
-          <div className="right-eye__bags"></div>
-          <div className="right-eye__bags-detail"></div>
-          <div className="right-eye__bags-2"></div>
-          <div className="right-eye__sclera"></div>
-          <div className="right-eye__iris"></div>
-          <div className="right-eye__pupil"></div>
-          <div className="right-eye__highlight"></div>
-          <div className="right-eye__highlight-2"></div>
+        <div class="face-lift-up">
+          <div className="face-patch"></div>
+          <div className="face">
+            <div className="face__splat"></div>
+            <div className="face__splat-ring"></div>
+            <div className="face__mark"></div>
+            <div className="face__mark-1"></div>
+            <div className="face__mark-2"></div>
+          </div>
+          <div className="left-eye">
+            <div className="left-eye__green-circle"></div>
+            <div className="left-eye__green-circle-detail"></div>
+            <div className="left-eye__bags"></div>
+            <div className="left-eye__bags-3"></div>
+            <div className="left-eye__bags-2"></div>
+            <div className="left-eye__sclera"></div>
+            <div className="left-eye__iris"></div>
+            <div className="left-eye__highlight"></div>
+            <div className="left-eye__highlight-2"></div>
+          </div>
+          <div className="right-eye">
+            <div className="right-eye__green-circle"></div>
+            <div className="right-eye__green-circle-detail"></div>
+            <div className="right-eye__bags"></div>
+            <div className="right-eye__bags-detail"></div>
+            <div className="right-eye__bags-2"></div>
+            <div className="right-eye__sclera"></div>
+            <div className="right-eye__iris"></div>
+            <div className="right-eye__pupil"></div>
+            <div className="right-eye__highlight"></div>
+            <div className="right-eye__highlight-2"></div>
+          </div>
         </div>
         <div className="mouth">
           <div className="mouth__right"></div>
+          <div className="mouth__inner"></div>
+          <div className="mouth__inner1"></div>
+          <div className="mouth__blank"></div>
+          <div className="mouth__chin"></div>
+          <div className="mouth__left"></div>
+          <div className="mouth__lip"></div>
+          <div className="mouth__lip-blank"></div>
         </div>
       </section>
       <section className="body">
@@ -94,6 +103,7 @@ function App() {
         <div className="shorts__pelvis-c"></div>
         <div className="shorts__pelvis-d"></div>
         <div className="shorts__pelvis-c"></div>
+        <div className="shorts__rim"></div>
         <div className="shorts__left-leg"></div>
         <div className="shorts__right-leg"></div>
       </section>

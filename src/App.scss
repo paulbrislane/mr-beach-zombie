@@ -14,6 +14,7 @@ $yellow-light: #fae57c;
 $brown: #85640a;
 $brown-dark: #85640a;
 $red: #ff0000;
+$red-light: #da5234;
 $red-dark: #9f3029;
 $eye: #eeebc2;
 $eye-dark: #b0ac87;
@@ -55,7 +56,7 @@ body {
 main {
   width: 422px;
   height: 800px;
-  background: url("./mrbeachzombie.png") center 100% no-repeat / contain;
+  // background: url('./mrbeachzombie.png') center 100% no-repeat / contain;
   position: relative;
 }
 
@@ -95,7 +96,7 @@ main {
     border-top-right-radius: 31px;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       background-color: $yellow-dark;
       height: 47px;
@@ -116,7 +117,7 @@ main {
     border-top-left-radius: 24px;
 
     &::before {
-      content: "";
+      content: '';
       background-color: $yellow;
       position: absolute;
       width: 63px;
@@ -148,7 +149,7 @@ main {
     top: 8px;
 
     &::before {
-      content: "";
+      content: '';
       background-color: $yellow;
       position: absolute;
       width: 71px;
@@ -180,7 +181,7 @@ main {
     top: 22px;
 
     &::before {
-      content: "";
+      content: '';
       background-color: $brown;
       position: absolute;
       width: 71px;
@@ -235,7 +236,7 @@ main {
     transform: scaleX(-1) skewX(-6deg);
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       background-color: $yellow-dark;
       height: 50px;
@@ -258,7 +259,7 @@ main {
   z-index: 2;
 
   &::before {
-    content: "";
+    content: '';
     position: absolute;
     background-color: $yellow-light;
     width: 48px;
@@ -272,7 +273,7 @@ main {
   &::after {
     background-color: $yellow-light;
     position: absolute;
-    content: "";
+    content: '';
     width: 32px;
     height: 45px;
     top: -31px;
@@ -280,6 +281,11 @@ main {
     transform: rotate(29deg);
     border-radius: 60% 30% 0% 60% / 60% 30% 75% 40%;
   }
+}
+
+.face-lift-up {
+  position: relative;
+  z-index: 1;
 }
 
 .face {
@@ -302,17 +308,17 @@ main {
   );
 
   &::before {
-    content: "";
+    content: '';
     background-color: $yellow;
     position: absolute;
-    width: 252px;
+    width: 254px;
     height: 237px;
     left: 3px;
     clip-path: polygon(
       14.8% 0,
       94% 0,
-      98% 44%,
-      97% 72%,
+      94.5% 44%,
+      96% 100%,
       97% 100%,
       0% 100%,
       7% 60%,
@@ -343,7 +349,7 @@ main {
     transform: rotate(21deg);
 
     &::after {
-      content: "";
+      content: '';
       width: 10px;
       height: 16px;
       border: 2px solid $blk;
@@ -365,7 +371,7 @@ main {
     transform: rotate(-72deg);
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       background-color: $yellow;
       width: 6px;
@@ -387,7 +393,7 @@ main {
     transform: rotate(-20deg);
 
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       background-color: $yellow;
       width: 7px;
@@ -524,7 +530,7 @@ main {
   height: 146px;
   width: 124px;
   top: 146px;
-  right: 82px;
+  right: 86px;
 
   &__green-circle {
     background-color: $green;
@@ -647,6 +653,125 @@ main {
   height: 108px;
   top: 297px;
   left: 94px;
+
+  &__inner {
+    position: absolute;
+    background-color: $red-light;
+    @include ibr;
+    width: 50px;
+    height: 32px;
+    top: 5px;
+    left: 119px;
+    transform: scale(-1) rotate(-181deg);
+    box-shadow: 0px 0px 0px 4px $blk, inset -3px 19px 0px -7px $red-dark;
+  }
+
+  &__inner1 {
+    position: absolute;
+    background-color: $red-light;
+    @include ibr;
+    width: 57px;
+    height: 17px;
+    top: 11px;
+    left: 78px;
+    transform: scale(-1) rotate(-181deg);
+    box-shadow: 0px 0px 0px 4px $blk, inset 8px 11px 0px 2px $red-dark;
+  }
+
+  &__blank {
+    position: absolute;
+    background-color: $red-light;
+    @include ibr;
+    width: 35px;
+    height: 25px;
+    top: 6px;
+    left: 112px;
+    transform: rotate(-174deg);
+    box-shadow: inset 0px -6px 0px 0px $red-dark;
+  }
+
+  &__chin {
+    position: absolute;
+    background-color: $yellow;
+    width: 108px;
+    height: 68px;
+    top: 40px;
+    left: 76px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 102px;
+      height: 104px;
+      background-color: $bg;
+      left: -51px;
+      top: 10px;
+      transform: rotate(77deg);
+      @include ibr;
+      box-shadow: -11px -14px 0px -13px $blk, 5px -3px 0px 2px $blk;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 57px;
+      height: 95px;
+      background-color: $bg;
+      left: 87px;
+      top: 8px;
+      transform: rotate(60deg);
+      @include ibr;
+      box-shadow: -24px 4px 0px -21px $blk, -11px 5px 0px -7px $blk;
+    }
+  }
+
+  &__right {
+    position: absolute;
+    background-color: $yellow;
+    @include ibr;
+    width: 110px;
+    height: 86px;
+    top: -24px;
+    left: 140px;
+    transform: scale(-1) rotate(-11deg);
+    box-shadow: 0px 0px 0px 4px $blk;
+  }
+
+  &__left {
+    position: absolute;
+    background-color: $yellow;
+    border-radius: 378% 73% 23% 70% / 143% 30% 70% 40%;
+    width: 143px;
+    height: 86px;
+    top: -61px;
+    left: 7px;
+    transform: scale(-1) rotate(-3deg) skew(-9deg);
+    box-shadow: 0px 0px 0px 4px $blk;
+  }
+
+  &__lip {
+    position: absolute;
+    background-color: $yellow;
+    border-radius: 200px;
+    width: 49px;
+    height: 18px;
+    top: 31px;
+    left: 58px;
+    transform: rotate(-6deg) skew(6deg);
+    box-shadow: 0px 0px 0px 4px $blk;
+  }
+
+  &__lip-blank {
+    position: absolute;
+    background-color: $yellow;
+    border-radius: 200px;
+    width: 43px;
+    height: 20px;
+    top: 33px;
+    left: 95px;
+    transform: rotate(12deg);
+    box-shadow: 0px -8px 0px -5px $blk;
+  }
 }
 
 .body {
@@ -677,7 +802,7 @@ main {
     border-top: 20px solid $blk;
 
     &::after {
-      content: "";
+      content: '';
       top: -20px;
       left: -11px;
       width: 0;
@@ -700,7 +825,7 @@ main {
     border-top: 20px solid $blk;
 
     &::after {
-      content: "";
+      content: '';
       top: -20px;
       left: -11px;
       width: 0;
@@ -723,7 +848,7 @@ main {
     border-top: 20px solid $blk;
 
     &::after {
-      content: "";
+      content: '';
       top: -20px;
       left: -11px;
       width: 0;
@@ -747,7 +872,7 @@ main {
     transform: scaleX(-1);
 
     &::after {
-      content: "";
+      content: '';
       top: -20px;
       left: -11px;
       width: 0;
@@ -771,7 +896,7 @@ main {
     transform: scaleX(-1) rotate(20deg);
 
     &::after {
-      content: "";
+      content: '';
       top: -16px;
       left: -11px;
       width: 0;
@@ -795,14 +920,14 @@ main {
     transform: rotate(-65deg);
 
     &::after {
-      content: "";
+      content: '';
       top: -22px;
       left: -11px;
       width: 0;
       height: 0;
       border-left: 10px solid transparent;
       border-right: 20px solid transparent;
-      border-top: 15px solid #edc70b;
+      border-top: 15px solid $yellow-dark;
       position: absolute;
     }
   }
@@ -826,7 +951,7 @@ main {
     width: 100px;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       background-color: $bg;
       width: 49px;
@@ -844,7 +969,7 @@ main {
     right: 32px;
     transform: rotate(-23deg);
     top: -8px;
-    box-shadow: 3px 0px 0px 0px $blk;
+    box-shadow: 3px 0px 0px 0px $blk, inset -15px 1px 0px 5px $yellow-dark;
   }
 }
 
@@ -984,7 +1109,7 @@ main {
     border: 1px solid $blk;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       background-color: $yellow;
       border-radius: 42% 40% 30% 70% / 60% 30% 70% 40%;
@@ -1107,7 +1232,7 @@ main {
 
   &__pelvis {
     position: absolute;
-    background-color: $brown;
+    background-color: $yellow-dark;
     width: 76px;
     height: 36px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -1120,50 +1245,64 @@ main {
 
   &__pelvis-a {
     position: absolute;
-    background-color: $brown;
-    width: 59px;
+    background-color: $yellow-dark;
+    width: 70px;
     height: 21px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    left: 65px;
+    left: 53px;
     transform: rotate(137deg);
     top: 13px;
-    box-shadow: -2px -2px 0px 1px $blk;
+    box-shadow: -2px -2px 0px 1px $blk, inset 21px 9px 0px -4px $brown;
     z-index: 2;
   }
 
   &__pelvis-b {
     position: absolute;
-    background-color: $brown;
+    background-color: $yellow-dark;
     width: 78px;
     height: 40px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     transform: scaleY(-1) rotate(-5deg);
     left: 23px;
     top: 6px;
-    box-shadow: -2px -2px 0px 1px $blk;
-    // z-index: 2;
+    box-shadow: -2px -2px 0px 4px $blk;
   }
 
   &__pelvis-c {
     position: absolute;
-    background-color: $brown;
-    width: 25px;
+    background-color: $yellow-dark;
+    width: 42px;
     height: 12px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
     transform: scaleY(-1) rotate(-17deg);
-    left: 3px;
-    top: 2px;
+    left: 5px;
+    top: 4px;
+    box-shadow: -2px 0px 0px 2px $blk;
   }
 
   &__pelvis-d {
     position: absolute;
-    background-color: $brown;
+    background-color: $yellow-dark;
     width: 36px;
     height: 12px;
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-    transform: scaleY(-1) rotate(7deg);
+    transform: scaleY(-1) rotate(22deg);
     left: 78px;
-    top: 4px;
+    top: 0px;
+    box-shadow: 2px 1px 0px 1px $blk;
+  }
+
+  &__rim {
+    position: absolute;
+    background-color: transparent;
+    width: 94px;
+    height: 16px;
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    transform: rotate(1deg);
+    left: 6px;
+    top: -3px;
+    box-shadow: 0px 3px 0px -1px #000105;
+    z-index: 2;
   }
 
   &__left-leg {
@@ -1176,10 +1315,10 @@ main {
     transform: rotate(14deg);
     top: 10px;
     z-index: 1;
-    box-shadow: -3px 3px 0px 0px $blk;
+    box-shadow: -3px 3px 0px 0px $blk, inset 9px 0 0px 4px $yellow-dark;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       background-color: $bg;
       height: 100px;
@@ -1202,10 +1341,10 @@ main {
     transform: rotate(5deg);
     top: 10px;
     z-index: 1;
-    box-shadow: -3px 3px 0px 0px $blk;
+    box-shadow: -3px 3px 0px 0px $blk, inset 9px 0px 0px 0px $yellow-dark;
 
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       background-color: $bg;
       height: 100px;
@@ -1236,7 +1375,7 @@ main {
     z-index: 1;
 
     &::before {
-      content: "";
+      content: '';
       background-color: $yellow;
       position: absolute;
       height: 114px;
@@ -1247,7 +1386,7 @@ main {
     }
 
     &::after {
-      content: "";
+      content: '';
       background-color: $bg;
       position: absolute;
       height: 133px;
@@ -1270,7 +1409,7 @@ main {
     z-index: 2;
 
     &::before {
-      content: "";
+      content: '';
       background-color: $yellow;
       position: absolute;
       height: 138px;
@@ -1281,7 +1420,7 @@ main {
     }
 
     &::after {
-      content: "";
+      content: '';
       background-color: $bg;
       position: absolute;
       height: 151px;
