@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
 
 function App() {
   return (
@@ -49,6 +49,7 @@ function App() {
             <div className="right-eye__pupil"></div>
             <div className="right-eye__highlight"></div>
             <div className="right-eye__highlight-2"></div>
+            <div className="right-eye__line"></div>
           </div>
         </div>
         <div className="mouth">
@@ -60,6 +61,9 @@ function App() {
           <div className="mouth__left"></div>
           <div className="mouth__lip"></div>
           <div className="mouth__lip-blank"></div>
+          <div className="mouth__line"></div>
+          <div className="mouth__drool"></div>
+          <div className="mouth__drool1"></div>
         </div>
       </section>
       <section className="body">
@@ -71,8 +75,13 @@ function App() {
         <div className="body__chest"></div>
         <div className="body__front"></div>
         <div className="body__back"></div>
+        <div className="body__neck"></div>
+        <div className="body__neck-v"></div>
         <div className="body__tear4"></div>
         <div className="body__tear5"></div>
+        <div className="body__cutout-line"></div>
+        <div className="body__cutout"></div>
+        <div className="body__arm-line"></div>
       </section>
       <section className="arm-right">
         <div className="arm-right__upper"></div>
@@ -106,6 +115,13 @@ function App() {
         <div className="shorts__rim"></div>
         <div className="shorts__left-leg"></div>
         <div className="shorts__right-leg"></div>
+        <div className="shorts__tear"></div>
+        <div className="shorts__tear1"></div>
+        <div className="shorts__tear2"></div>
+        <div className="shorts__tear3"></div>
+        <div className="shorts__tear4"></div>
+        <div className="shorts__tear5"></div>
+        <div className="shorts__tear6"></div>
       </section>
 
       <section className="legs">
