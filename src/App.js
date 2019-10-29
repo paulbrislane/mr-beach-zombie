@@ -1,5 +1,5 @@
-import React from "react";
-import "./App.scss";
+import React from 'react';
+import './App.scss';
 
 function App() {
   return (
@@ -45,8 +45,10 @@ function App() {
             <div className="right-eye__bags-detail"></div>
             <div className="right-eye__bags-2"></div>
             <div className="right-eye__sclera"></div>
-            <div className="right-eye__iris"></div>
-            <div className="right-eye__pupil"></div>
+            <div className="right-eye__iris">
+              <div className="right-eye__pupil"></div>
+            </div>
+
             <div className="right-eye__highlight"></div>
             <div className="right-eye__highlight-2"></div>
             <div className="right-eye__line"></div>
@@ -129,6 +131,8 @@ function App() {
         <div className="legs__right"></div>
       </section>
 
+      <div className="base"></div>
+
       <section className="feet">
         <div className="feet__left"></div>
         <div className="feet__right"></div>
@@ -142,6 +146,17 @@ function App() {
         <div className="feet__right-toe-3"></div>
         <div className="feet__left-big-toe"></div>
         <div className="feet__right-big-toe"></div>
+      </section>
+
+      <section className="waving">
+        <div className="waving__pool"></div>
+        <div className="waving__stump"></div>
+        <div className="waving__palm">
+          <div className="waving__palm-finger"></div>
+          <div className="waving__palm-finger1"></div>
+          <div className="waving__palm-finger2"></div>
+          <div className="waving__palm-thumb"></div>
+        </div>
       </section>
     </main>
   );
