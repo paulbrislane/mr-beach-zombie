@@ -1,5 +1,5 @@
-import React from "react";
-import "./App.scss";
+import React from 'react';
+import './App.scss';
 
 function App() {
   return (
@@ -148,6 +148,8 @@ function App() {
         <div className="feet__right-toe-3"></div>
         <div className="feet__left-big-toe"></div>
         <div className="feet__right-big-toe"></div>
+        <div className="feet__patch"></div>
+        <div className="feet__patch1"></div>
       </section>
 
       <section className="waving">
