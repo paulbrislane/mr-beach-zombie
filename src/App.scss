@@ -62,6 +62,8 @@ main {
 
 .head {
   height: 405px;
+  transform-origin: bottom center;
+  animation: head-wobble 2s infinite linear;
 }
 
 .crown {
@@ -96,7 +98,7 @@ main {
     border-top-right-radius: 31px;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       background-color: $yellow-dark;
       height: 47px;
@@ -117,7 +119,7 @@ main {
     border-top-left-radius: 24px;
 
     &::before {
-      content: '';
+      content: "";
       background-color: $yellow;
       position: absolute;
       width: 63px;
@@ -149,7 +151,7 @@ main {
     top: 8px;
 
     &::before {
-      content: '';
+      content: "";
       background-color: $yellow;
       position: absolute;
       width: 71px;
@@ -181,7 +183,7 @@ main {
     top: 22px;
 
     &::before {
-      content: '';
+      content: "";
       background-color: $brown;
       position: absolute;
       width: 71px;
@@ -236,7 +238,7 @@ main {
     transform: scaleX(-1) skewX(-6deg);
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       background-color: $yellow-dark;
       height: 50px;
@@ -259,7 +261,7 @@ main {
   z-index: 2;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     background-color: $yellow-light;
     width: 48px;
@@ -273,7 +275,7 @@ main {
   &::after {
     background-color: $yellow-light;
     position: absolute;
-    content: '';
+    content: "";
     width: 32px;
     height: 45px;
     top: -31px;
@@ -292,7 +294,7 @@ main {
   background-color: $blk;
   position: absolute;
   width: 252px;
-  height: 245px;
+  height: 242px;
   top: 62px;
   left: 95px;
   clip-path: polygon(
@@ -308,7 +310,7 @@ main {
   );
 
   &::before {
-    content: '';
+    content: "";
     background-color: $yellow;
     position: absolute;
     width: 254px;
@@ -350,7 +352,7 @@ main {
     transform: rotate(21deg);
 
     &::after {
-      content: '';
+      content: "";
       width: 10px;
       height: 16px;
       border: 2px solid $blk;
@@ -372,7 +374,7 @@ main {
     transform: rotate(-72deg);
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       background-color: $yellow;
       width: 6px;
@@ -394,7 +396,7 @@ main {
     transform: rotate(-20deg);
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       background-color: $yellow;
       width: 7px;
@@ -413,6 +415,16 @@ main {
     top: 62px;
     left: 159px;
     transform: rotate(-21deg);
+  }
+
+  &__mask-btm {
+    position: absolute;
+    background-color: $yellow;
+    width: 222px;
+    height: 5px;
+    left: 6px;
+    z-index: 1;
+    top: -4px;
   }
 }
 
@@ -717,7 +729,7 @@ main {
     left: 76px;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 102px;
       height: 104px;
@@ -731,7 +743,7 @@ main {
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 57px;
       height: 95px;
@@ -748,12 +760,12 @@ main {
     position: absolute;
     background-color: $yellow;
     @include ibr;
-    width: 110px;
+    width: 111px;
     height: 86px;
     top: -24px;
     left: 140px;
     transform: scale(-1) rotate(-11deg);
-    box-shadow: 0px 0px 0px 4px $blk, inset 20px 0px 0px 0px $yellow-dark;
+    box-shadow: 0px 0px 0px 4px $blk, inset 19px 0px 0px 0px $yellow-dark;
   }
 
   &__left {
@@ -806,7 +818,7 @@ main {
     border-radius: 50%;
   }
 
-  &__drool {
+  &__tongue {
     position: absolute;
     background-color: $red-light;
     top: 30px;
@@ -818,7 +830,7 @@ main {
     transform: rotate(17deg);
   }
 
-  &__drool1 {
+  &__tongue1 {
     position: absolute;
     background-color: $red-light;
     top: 34px;
@@ -830,7 +842,7 @@ main {
     transform: rotate(11deg);
 
     &::before {
-      content: '';
+      content: "";
       height: 6px;
       width: 10px;
       position: absolute;
@@ -840,6 +852,18 @@ main {
       transform: rotate(11deg);
       top: 0;
     }
+  }
+
+  &__tongue-line {
+    position: absolute;
+    background-color: $red-light;
+    top: 31px;
+    left: 144px;
+    width: 5px;
+    height: 16px;
+    transform: rotate(-35deg);
+    border-radius: 100%;
+    box-shadow: 2px 0px 0px 0px $blk;
   }
 }
 
@@ -871,7 +895,7 @@ main {
     border-top: 20px solid $blk;
 
     &::after {
-      content: '';
+      content: "";
       top: -20px;
       left: -11px;
       width: 0;
@@ -894,7 +918,7 @@ main {
     border-top: 20px solid $blk;
 
     &::after {
-      content: '';
+      content: "";
       top: -20px;
       left: -11px;
       width: 0;
@@ -917,7 +941,7 @@ main {
     border-top: 20px solid $blk;
 
     &::after {
-      content: '';
+      content: "";
       top: -20px;
       left: -11px;
       width: 0;
@@ -941,7 +965,7 @@ main {
     transform: scaleX(-1);
 
     &::after {
-      content: '';
+      content: "";
       top: -20px;
       left: -11px;
       width: 0;
@@ -965,7 +989,7 @@ main {
     transform: scaleX(-1) rotate(20deg);
 
     &::after {
-      content: '';
+      content: "";
       top: -16px;
       left: -11px;
       width: 0;
@@ -989,7 +1013,7 @@ main {
     transform: rotate(-65deg);
 
     &::after {
-      content: '';
+      content: "";
       top: -22px;
       left: -11px;
       width: 0;
@@ -1055,7 +1079,7 @@ main {
     width: 100px;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       background-color: $bg;
       width: 49px;
@@ -1076,7 +1100,7 @@ main {
     left: -2px;
 
     &::before {
-      content: '';
+      content: "";
       background-color: $yellow-dark;
       position: absolute;
       width: 45px;
@@ -1100,7 +1124,7 @@ main {
     // z-index: 1;
 
     &::after {
-      content: '';
+      content: "";
       top: -37px;
       left: -12px;
       width: 0;
@@ -1263,7 +1287,7 @@ main {
     border: 1px solid $blk;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       background-color: $yellow;
       border-radius: 42% 40% 30% 70% / 60% 30% 70% 40%;
@@ -1472,7 +1496,7 @@ main {
     box-shadow: -3px 3px 0px 0px $blk, inset 9px 0 0px 4px $yellow-dark;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       background-color: $bg;
       height: 100px;
@@ -1498,7 +1522,7 @@ main {
     box-shadow: -3px 3px 0px 0px $blk, inset 9px 0px 0px 0px $yellow-dark;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       background-color: $bg;
       height: 100px;
@@ -1523,7 +1547,7 @@ main {
     z-index: 1;
 
     &::after {
-      content: '';
+      content: "";
       top: -17px;
       left: -8px;
       width: 0;
@@ -1548,7 +1572,7 @@ main {
     transform: rotate(59deg);
 
     &::after {
-      content: '';
+      content: "";
       top: -17px;
       left: -10px;
       width: 0;
@@ -1573,7 +1597,7 @@ main {
     transform: rotate(-16deg);
 
     &::after {
-      content: '';
+      content: "";
       top: -14px;
       left: -9px;
       width: 0;
@@ -1598,7 +1622,7 @@ main {
     transform: rotate(-16deg);
 
     &::after {
-      content: '';
+      content: "";
       top: -14px;
       left: -9px;
       width: 0;
@@ -1623,7 +1647,7 @@ main {
     transform: rotate(38deg);
 
     &::after {
-      content: '';
+      content: "";
       top: -17px;
       left: -10px;
       width: 0;
@@ -1648,7 +1672,7 @@ main {
     transform: rotate(-16deg);
 
     &::after {
-      content: '';
+      content: "";
       top: -14px;
       left: -9px;
       width: 0;
@@ -1673,7 +1697,7 @@ main {
     transform: rotate(-98deg);
 
     &::after {
-      content: '';
+      content: "";
       top: -16px;
       left: -10px;
       width: 0;
@@ -1703,7 +1727,7 @@ main {
     z-index: 1;
 
     &::before {
-      content: '';
+      content: "";
       background-color: $yellow;
       position: absolute;
       height: 114px;
@@ -1714,7 +1738,7 @@ main {
     }
 
     &::after {
-      content: '';
+      content: "";
       background-color: $bg;
       position: absolute;
       height: 133px;
@@ -1737,7 +1761,7 @@ main {
     z-index: 2;
 
     &::before {
-      content: '';
+      content: "";
       background-color: $yellow;
       position: absolute;
       height: 138px;
@@ -1748,7 +1772,7 @@ main {
     }
 
     &::after {
-      content: '';
+      content: "";
       background-color: $bg;
       position: absolute;
       height: 151px;
@@ -1945,7 +1969,7 @@ main {
     box-shadow: 0 0 0 2px $blk;
 
     &::before {
-      content: '';
+      content: "";
       @include ibr;
       width: 15px;
       height: 6px;
@@ -1956,7 +1980,7 @@ main {
     }
 
     &::after {
-      content: '';
+      content: "";
       @include ibr;
       width: 7px;
       height: 3px;
@@ -1977,7 +2001,7 @@ main {
     left: 45px;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       background-color: $yellow;
       border-radius: 100%;
@@ -2018,7 +2042,7 @@ main {
       height: 200px;
       bottom: 8px;
       left: -30px;
-      content: '';
+      content: "";
       position: absolute;
       width: 37px;
       height: 22px;
@@ -2031,7 +2055,7 @@ main {
     }
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 10px;
       height: 21px;
@@ -2055,7 +2079,7 @@ main {
     box-shadow: inset -4px -7px 0px -3px $yellow-dark, 0 0 0 3px $blk;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 13px;
       height: 10px;
@@ -2079,7 +2103,7 @@ main {
     box-shadow: inset -4px -7px 0px -3px $yellow-dark, 0 0 0 3px $blk;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 18px;
       height: 10px;
@@ -2103,7 +2127,7 @@ main {
     box-shadow: inset -4px -7px 0px -3px $yellow-dark, 0 0 0 3px $blk;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 18px;
       height: 12px;
@@ -2126,36 +2150,54 @@ main {
   background-color: lighten($bg, 5%);
 }
 
-@keyframes he-is-waving {
-  0% {
-    transform: scaleX(-1) rotate(-177deg);
-  }
+// @keyframes head-wobble {
+//   0% {
+//     transform: rotate(0);
+//   }
 
-  25% {
-    transform: scaleX(-1) rotate(-187deg);
-  }
+//   50% {
+//     transform: rotate(-2deg);
+//   }
 
-  50% {
-    transform: scaleX(-1) rotate(-177deg);
-  }
+//   75% {
+//     transform: rotate(2deg);
+//   }
 
-  75% {
-    transform: scaleX(-1) rotate(-167deg);
-  }
+//   100% {
+//     transform: rotate(0);
+//   }
+// }
 
-  100% {
-    transform: scaleX(-1) rotate(-177deg);
-  }
-}
+// @keyframes he-is-waving {
+//   0% {
+//     transform: scaleX(-1) rotate(-177deg);
+//   }
 
-@keyframes rotate-cw {
-  100% {
-    transform: rotate(360deg);
-  }
-}
+//   25% {
+//     transform: scaleX(-1) rotate(-187deg);
+//   }
 
-@keyframes rotate-ccw {
-  100% {
-    transform: rotate(-360deg);
-  }
-}
+//   50% {
+//     transform: scaleX(-1) rotate(-177deg);
+//   }
+
+//   75% {
+//     transform: scaleX(-1) rotate(-167deg);
+//   }
+
+//   100% {
+//     transform: scaleX(-1) rotate(-177deg);
+//   }
+// }
+
+// @keyframes rotate-cw {
+//   100% {
+//     transform: rotate(360deg);
+//   }
+// }
+
+// @keyframes rotate-ccw {
+//   100% {
+//     transform: rotate(-360deg);
+//   }
+// }

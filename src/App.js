@@ -1,5 +1,5 @@
-import React from 'react';
-import './App.scss';
+import React from "react";
+import "./App.scss";
 
 function App() {
   return (
@@ -55,6 +55,7 @@ function App() {
           </div>
         </div>
         <div className="mouth">
+          <div className="face__mask-btm"></div>
           <div className="mouth__right"></div>
           <div className="mouth__inner"></div>
           <div className="mouth__inner1"></div>
@@ -64,8 +65,9 @@ function App() {
           <div className="mouth__lip"></div>
           <div className="mouth__lip-blank"></div>
           <div className="mouth__line"></div>
-          <div className="mouth__drool"></div>
-          <div className="mouth__drool1"></div>
+          <div className="mouth__tongue"></div>
+          <div className="mouth__tongue1"></div>
+          <div className="mouth__tongue-line"></div>
         </div>
       </section>
       <section className="body">
